@@ -1,0 +1,127 @@
+.topper{
+    grid-area: topper;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /* .nav{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+} */
+
+  /* .nav:hover{
+    box-shadow: inset 5000px 0 0 0 #54b3d6;
+    color: white;
+  } */
+
+  .home:hover{
+    box-shadow: inset 500px 0 0 0 purple;
+    color: white;
+  }
+  .resume:hover{
+    box-shadow: inset 500px 0 0 0 purple;
+    color: white;
+  }
+  .contact:hover{
+    box-shadow: inset 500px 0 0 0 purple;
+    color: white;
+  }
+  .gallery:hover{
+    box-shadow: inset 500px 0 0 0 purple;
+    color: white;
+  }
+
+  /* .gallery{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+  } */
+
+  .welcome{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .overlay {
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    font-size: xx-large;
+    font-weight: 800;
+    
+  }
+
+  .middle:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .middle{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer{
+    grid-area: footer;
+    background-color: black;
+    width: 100%;
+    color: white;
+  }
+
+
+
+
+  @media(min-width:768px){
+  
+    .container{ 
+     grid-template-areas:
+     "topper topper topper"
+     "middle middle middle"
+     "prez_pic hipster_pic biker_pic"
+     "footer footer footer";
+     }  
+   
+    .footer{
+     display: flex;
+    }
+   
+    .social-media{
+     display: flex;
+     margin-left: auto;
+     gap: 3%;
+   
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   }
