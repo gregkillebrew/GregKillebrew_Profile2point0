@@ -73,12 +73,12 @@
   img{
     max-width: 100%;
     height: auto;
-    transition: 1s ease;
+    transition: 2s ease;
   }
 
   img:hover{
     border-radius:50%;
-    transition: 1s ease;
+    transition: 2s ease;
   }
 
   .box1{
