@@ -1,0 +1,104 @@
+.container {  
+    display: grid;
+    gap: 1%;
+    justify-items: center;
+    text-align: center; 
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-areas:
+   "topper"
+   "form"
+   "footer";
+    }
+  
+.topper{
+    grid-area: topper;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .form{
+    grid-area: form;
+    justify-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+.Name_Box{
+    border-style: solid solid;
+    text-align: center;
+}
+
+.Email_Box{
+    border-style: solid solid;
+    text-align: center;
+}
+
+.how_hear{
+    border-style: solid solid;
+    text-align: center;
+}
+
+.Comment_Box{
+    border-style: solid solid;
+    text-align: center;
+    height: 50px;
+}
+
+.Yes_No{
+    border-style: solid solid;
+    text-align: center;
+}
+
+
+
+.footer{
+    /* display: inline-block; */
+    background-color: black;
+    width: 100%;
+    color: white;
+    align-items: center;
+  }
+
+ .linkedin{
+    max-width: 0 auto;
+    max-height: 0 auto;
+    
+  }
+
+
+@media(min-width:768px){
+  
+ 
+    .footer{
+      display: flex;
+     }
+    
+     /* .social-media{
+      display: flex;
+      margin-left: auto;
+      gap: 3%;
+    
+     } */
+ 
+ }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

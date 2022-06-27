@@ -4,9 +4,9 @@
     grid-template-areas:
     "topper"
     "middle"
-    "prez_pic"
-    "hipster_pic"
-    "biker_pic"
+    "box1"
+    "box2"
+    "box3"
     "footer";
     justify-items: center;
     text-align: center;
@@ -42,7 +42,6 @@
   
   .middle{
     grid-area: middle;
-    background-image: url("images/lego.jpg");
     background-size: cover;
     /* min-height: 300px; */
     background-position: 41% 40%;
@@ -55,62 +54,94 @@
     font-size: xx-large;  
   }
 
-  .bikerme{
+
+
+  .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    font-size: xx-large;
+    font-weight: 800;
+    
+  }
+
+  img{
     max-width: 100%;
     height: auto;
     transition: 1s ease;
   }
 
-  .bikerme:hover{
-    /* max-width: 100%;
-    height: auto; */
-    -webkit-filter: blur(5px);
-    transition: 1s ease;;
+  img:hover{
+    border-radius:50%;
+    transition: 1s ease;
   }
 
-  .prez_pic{
-    background-color: green;
+  .box1{
+    background-color: #b1eaff;
     width: 300px;
-    /* border: 15px solid green; */
+    border: 15px solid #0bb5f4; 
     padding: 50px;
     margin: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: x-large;
+    transition: 1s ease
+  }
+
+  .box1:hover {
+    box-shadow: inset 500px 0 0 0 lightgray;
+    color: white;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    transition: 1s ease;
     font-size: xxx-large;
   }
 
-  .prez_pic:hover {
-    box-shadow: inset 500px 0 0 0 black;
-    color: white;
-  }
-
-  .hipster_pic{
-    background-color: lightgrey;
+  .box2{
+    background-color: #b1eaff;
     width: 300px;
-    border: 15px solid green;
+    border: 15px solid #0bb5f4;
     padding: 50px;
     margin: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: x-large;
+    transition: 1s ease
+  }
+
+  .box2:hover {
+    box-shadow: inset 500px 0 0 0 lightgray;
+    color: white;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    transition: 1s ease;
     font-size: xxx-large;
   }
 
-  .hipster_pic:hover {
-    box-shadow: inset 500px 0 0 0 black;
-    color: white;
-  }
-
-  .biker_pic{
-    background-color: lightgrey;
+  .box3{
+    background-color: #b1eaff;
     width: 300px;
-    border: 15px solid green;
+    border: 15px solid #0bb5f4;
     padding: 50px;
     margin: 20px;
-    font-weight: 600;
-    font-size: xxx-large;
+    font-weight: 400;
+    font-size: x-large;
+    transition: 1s ease
   }
 
-  .biker_pic:hover {
-    box-shadow: inset 500px 0 0 0 black;
-    color: white;
+  .box3:hover {
+    box-shadow: inset 500px 0 0 0 lightgray;
+    color: black;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    transition: 1s ease;
+    font-weight: 800;
   }
 
   .footer{
@@ -127,7 +158,7 @@
     grid-template-areas:
     "topper topper topper"
     "middle middle middle"
-    "prez_pic hipster_pic biker_pic"
+    "box1 box2 box3"
     "footer footer footer";
     }  
   
